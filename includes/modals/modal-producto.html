@@ -1,0 +1,33 @@
+<!-- Modal Agregar -->
+<div class="modal fade" id="modalAgregar" tabindex="-1" aria-labelledby="labelAgregar" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="labelAgregar">Insertar Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label">Clave del Producto</label>
+                    <input type="text" class="form-control" id="add-clave" placeholder="Ej: P016">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="add-nombre" placeholder="Ej: Laptop HP">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Precio</label>
+                    <input type="number" class="form-control" id="add-precio" placeholder="0.00" step="0.01" min="0">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-control" id="add-descripcion" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>

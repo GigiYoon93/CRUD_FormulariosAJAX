@@ -1,0 +1,34 @@
+<!-- Modal Actualizar -->
+<div class="modal fade" id="modalActualizar" tabindex="-1" aria-labelledby="labelActualizar" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="labelActualizar">Actualizar Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="edit-clave">
+                <div class="mb-3">
+                    <label class="form-label">Clave (no editable)</label>
+                    <input type="text" class="form-control" id="edit-clave-show" disabled>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre del Producto</label>
+                    <input type="text" class="form-control" id="edit-nombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Precio</label>
+                    <input type="number" class="form-control" id="edit-precio" step="0.01" min="0">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-control" id="edit-descripcion" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btn-actualizar">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
